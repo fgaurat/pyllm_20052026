@@ -1,0 +1,105 @@
+<svg viewBox="0 0 580 252" xmlns="http://www.w3.org/2000/svg" width="580" height="252" font-family="-apple-system,BlinkMacSystemFont,sans-serif">
+  <defs>
+    <marker id="aqarr" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#6B7280"/></marker>
+    <marker id="aqblue" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#2563EB"/></marker>
+    <marker id="aqviolet" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#7C3AED"/></marker>
+  </defs>
+  <rect width="580" height="252" rx="8" fill="#FAFAFA" stroke="#E5E7EB"/>
+  <text x="290" y="17" text-anchor="middle" font-size="12" font-weight="bold" fill="#374151">Mécanisme d'attention — chaque token interroge son contexte</text>
+
+  <!-- Tokens colonne gauche -->
+  <text x="45" y="37" text-anchor="middle" font-size="9" font-weight="bold" fill="#6B7280">Tokens</text>
+  <rect x="8" y="44" width="74" height="22" rx="4" fill="#EFF6FF" stroke="#93C5FD"/>
+  <text x="45" y="59" text-anchor="middle" font-size="10" fill="#1E40AF">sinistre</text>
+  <rect x="8" y="72" width="74" height="22" rx="4" fill="#EFF6FF" stroke="#93C5FD"/>
+  <text x="45" y="87" text-anchor="middle" font-size="10" fill="#1E40AF">IBNR</text>
+  <rect x="8" y="100" width="74" height="22" rx="4" fill="#F5F3FF" stroke="#A78BFA" stroke-width="2"/>
+  <text x="45" y="115" text-anchor="middle" font-size="10" fill="#5B21B6" font-weight="bold">provision</text>
+  <rect x="8" y="128" width="74" height="22" rx="4" fill="#EFF6FF" stroke="#93C5FD"/>
+  <text x="45" y="143" text-anchor="middle" font-size="10" fill="#1E40AF">tardive</text>
+
+  <!-- Fan lines to Q/K/V -->
+  <line x1="82" y1="55" x2="112" y2="68" stroke="#BFDBFE" stroke-width="0.8"/>
+  <line x1="82" y1="83" x2="112" y2="78" stroke="#BFDBFE" stroke-width="0.8"/>
+  <line x1="82" y1="111" x2="112" y2="90" stroke="#A78BFA" stroke-width="1.5"/>
+  <line x1="82" y1="139" x2="112" y2="100" stroke="#BFDBFE" stroke-width="0.8"/>
+
+  <!-- Q K V projections -->
+  <rect x="112" y="44" width="82" height="108" rx="5" fill="white" stroke="#D1D5DB"/>
+  <text x="153" y="58" text-anchor="middle" font-size="9" font-weight="bold" fill="#374151">Projections</text>
+  <rect x="119" y="64" width="20" height="80" rx="3" fill="#FEF3C7" stroke="#FCD34D"/>
+  <text x="129" y="109" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#D97706">Q</text>
+  <rect x="143" y="64" width="20" height="80" rx="3" fill="#DCFCE7" stroke="#86EFAC"/>
+  <text x="153" y="109" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#16A34A">K</text>
+  <rect x="167" y="64" width="20" height="80" rx="3" fill="#EDE9FE" stroke="#C4B5FD"/>
+  <text x="177" y="109" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#7C3AED">V</text>
+
+  <!-- Q note -->
+  <text x="153" y="158" text-anchor="middle" font-size="8" fill="#D97706">Query</text>
+  <text x="153" y="169" text-anchor="middle" font-size="8" fill="#16A34A">Key</text>
+  <text x="153" y="180" text-anchor="middle" font-size="8" fill="#7C3AED">Value</text>
+
+  <!-- Arrow QKV → scores -->
+  <line x1="196" y1="98" x2="218" y2="98" stroke="#6B7280" stroke-width="1.5" marker-end="url(#aqarr)"/>
+  <text x="207" y="91" text-anchor="middle" font-size="8" fill="#374151">Q·Kᵀ/√d</text>
+
+  <!-- Attention heatmap -->
+  <rect x="220" y="44" width="118" height="130" rx="5" fill="white" stroke="#D1D5DB"/>
+  <text x="279" y="58" text-anchor="middle" font-size="9" font-weight="bold" fill="#374151">Scores d'attention</text>
+  <!-- col labels (top) -->
+  <text x="240" y="73" text-anchor="middle" font-size="7" fill="#374151">sin.</text>
+  <text x="264" y="73" text-anchor="middle" font-size="7" fill="#374151">IBNR</text>
+  <text x="291" y="73" text-anchor="middle" font-size="7" fill="#374151">prov.</text>
+  <text x="318" y="73" text-anchor="middle" font-size="7" fill="#374151">tard.</text>
+  <!-- row labels -->
+  <text x="228" y="87" text-anchor="end" font-size="7" fill="#374151">sin.</text>
+  <text x="228" y="109" text-anchor="end" font-size="7" fill="#374151">IBNR</text>
+  <text x="228" y="131" text-anchor="end" font-size="7" fill="#5B21B6" font-weight="bold">prov.</text>
+  <text x="228" y="153" text-anchor="end" font-size="7" fill="#374151">tard.</text>
+
+  <!-- Row 0: sinistre query -->
+  <rect x="230" y="78" width="22" height="18" rx="2" fill="#FDE68A"/><text x="241" y="91" text-anchor="middle" font-size="8" fill="#374151">0.7</text>
+  <rect x="254" y="78" width="22" height="18" rx="2" fill="#FEF3C7"/><text x="265" y="91" text-anchor="middle" font-size="8" fill="#374151">0.4</text>
+  <rect x="278" y="78" width="22" height="18" rx="2" fill="#FEF9C3"/><text x="289" y="91" text-anchor="middle" font-size="8" fill="#374151">0.3</text>
+  <rect x="302" y="78" width="22" height="18" rx="2" fill="#FFFBEB"/><text x="313" y="91" text-anchor="middle" font-size="8" fill="#9CA3AF">0.1</text>
+
+  <!-- Row 1: IBNR query -->
+  <rect x="230" y="100" width="22" height="18" rx="2" fill="#FEF3C7"/><text x="241" y="113" text-anchor="middle" font-size="8" fill="#374151">0.3</text>
+  <rect x="254" y="100" width="22" height="18" rx="2" fill="#FDE68A"/><text x="265" y="113" text-anchor="middle" font-size="8" fill="#374151">0.7</text>
+  <rect x="278" y="100" width="22" height="18" rx="2" fill="#FBBF24"/><text x="289" y="113" text-anchor="middle" font-size="8" fill="#374151">0.9</text>
+  <rect x="302" y="100" width="22" height="18" rx="2" fill="#FEF9C3"/><text x="313" y="113" text-anchor="middle" font-size="8" fill="#9CA3AF">0.2</text>
+
+  <!-- Row 2: provision query (highlighted) -->
+  <rect x="230" y="122" width="22" height="18" rx="2" fill="#F59E0B"/><text x="241" y="135" text-anchor="middle" font-size="8" fill="white" font-weight="bold">0.8</text>
+  <rect x="254" y="122" width="22" height="18" rx="2" fill="#D97706"/><text x="265" y="135" text-anchor="middle" font-size="8" fill="white" font-weight="bold">0.9</text>
+  <rect x="278" y="122" width="22" height="18" rx="2" fill="#FDE68A"/><text x="289" y="135" text-anchor="middle" font-size="8" fill="#374151">0.6</text>
+  <rect x="302" y="122" width="22" height="18" rx="2" fill="#FFFBEB"/><text x="313" y="135" text-anchor="middle" font-size="8" fill="#9CA3AF">0.1</text>
+
+  <!-- Row 3: tardive query -->
+  <rect x="230" y="144" width="22" height="18" rx="2" fill="#FEF9C3"/><text x="241" y="157" text-anchor="middle" font-size="8" fill="#374151">0.2</text>
+  <rect x="254" y="144" width="22" height="18" rx="2" fill="#FEF3C7"/><text x="265" y="157" text-anchor="middle" font-size="8" fill="#374151">0.4</text>
+  <rect x="278" y="144" width="22" height="18" rx="2" fill="#FBBF24"/><text x="289" y="157" text-anchor="middle" font-size="8" fill="#374151">0.9</text>
+  <rect x="302" y="144" width="22" height="18" rx="2" fill="#FDE68A"/><text x="313" y="157" text-anchor="middle" font-size="8" fill="#374151">0.7</text>
+
+  <!-- Arrow scores → output -->
+  <line x1="340" y1="109" x2="362" y2="109" stroke="#6B7280" stroke-width="1.5" marker-end="url(#aqarr)"/>
+  <text x="351" y="102" text-anchor="middle" font-size="8" fill="#374151">× V</text>
+
+  <!-- Output -->
+  <rect x="364" y="44" width="208" height="130" rx="5" fill="white" stroke="#D1D5DB"/>
+  <text x="468" y="58" text-anchor="middle" font-size="9" font-weight="bold" fill="#374151">Représentations enrichies</text>
+  <rect x="373" y="66" width="190" height="22" rx="4" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="468" y="81" text-anchor="middle" font-size="9" fill="#1E40AF">sinistre (contexte absorbé)</text>
+  <rect x="373" y="92" width="190" height="22" rx="4" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="468" y="107" text-anchor="middle" font-size="9" fill="#1E40AF">IBNR (contexte absorbé)</text>
+  <rect x="373" y="118" width="190" height="22" rx="4" fill="#F5F3FF" stroke="#C4B5FD" stroke-width="2"/>
+  <text x="468" y="133" text-anchor="middle" font-size="9" fill="#5B21B6" font-weight="bold">provision ← enrichi par IBNR+sinistre</text>
+  <rect x="373" y="144" width="190" height="22" rx="4" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="468" y="159" text-anchor="middle" font-size="9" fill="#1E40AF">tardive (contexte absorbé)</text>
+
+  <!-- Bottom bar -->
+  <rect x="10" y="188" width="560" height="52" rx="5" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="290" y="202" text-anchor="middle" font-size="10" font-weight="bold" fill="#065F46">Intuition clé :</text>
+  <text x="290" y="216" text-anchor="middle" font-size="9.5" fill="#374151">chaque token « regarde » tous les autres et absorbe leur contexte —</text>
+  <text x="290" y="230" text-anchor="middle" font-size="9.5" fill="#374151">« provision » sait qu'il s'agit d'IBNR et de sinistres tardifs</text>
+</svg>

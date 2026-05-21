@@ -1,0 +1,31 @@
+<svg viewBox="0 0 480 210" xmlns="http://www.w3.org/2000/svg" width="480" height="210" font-family="-apple-system,BlinkMacSystemFont,sans-serif">
+  <defs>
+    <marker id="s2b" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#2563EB"/></marker>
+    <marker id="s2g" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#059669"/></marker>
+  </defs>
+  <rect width="480" height="210" rx="8" fill="#FAFAFA" stroke="#E5E7EB"/>
+  <text x="240" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#374151">Arithmétique vectorielle — Word2Vec (Mikolov, 2013)</text>
+  <!-- Parallélogramme : homme(90,155) roi(165,72) femme(305,155) reine(380,72) -->
+  <!-- Vecteurs « royauté » (diagonaux, bleus) -->
+  <line x1="130" y1="155" x2="157" y2="88" stroke="#2563EB" stroke-width="2.5" marker-end="url(#s2b)"/>
+  <line x1="345" y1="155" x2="372" y2="88" stroke="#2563EB" stroke-width="2.5" marker-end="url(#s2b)"/>
+  <text x="100" y="122" font-size="10" fill="#2563EB" font-style="italic">+ royauté</text>
+  <text x="348" y="122" font-size="10" fill="#2563EB" font-style="italic">+ royauté</text>
+  <!-- Vecteurs « genre » (horizontaux, verts pointillés) -->
+  <line x1="130" y1="155" x2="263" y2="155" stroke="#059669" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#s2g)"/>
+  <line x1="175" y1="72" x2="348" y2="72" stroke="#059669" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#s2g)"/>
+  <text x="192" y="148" font-size="10" fill="#059669" font-style="italic">genre féminin</text>
+  <text x="235" y="66" font-size="10" fill="#059669" font-style="italic">genre féminin</text>
+  <!-- Nœuds -->
+  <rect x="50" y="140" width="80" height="30" rx="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="90" y="160" text-anchor="middle" dominant-baseline="central" font-size="13" fill="#1E40AF" font-weight="bold">homme</text>
+  <rect x="145" y="57" width="60" height="30" rx="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="175" y="77" text-anchor="middle" dominant-baseline="central" font-size="13" fill="#1E40AF" font-weight="bold">roi</text>
+  <rect x="265" y="140" width="80" height="30" rx="6" fill="#F0FDF4" stroke="#059669" stroke-width="1.5"/>
+  <text x="305" y="160" text-anchor="middle" dominant-baseline="central" font-size="13" fill="#065F46" font-weight="bold">femme</text>
+  <rect x="352" y="57" width="70" height="30" rx="6" fill="#F0FDF4" stroke="#059669" stroke-width="1.5"/>
+  <text x="387" y="77" text-anchor="middle" dominant-baseline="central" font-size="13" fill="#065F46" font-weight="bold">reine</text>
+  <!-- Formule -->
+  <rect x="50" y="185" width="380" height="20" rx="5" fill="#FFF7ED" stroke="#FED7AA"/>
+  <text x="240" y="198" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#92400E" font-weight="bold">roi − homme + femme ≈ reine</text>
+</svg>

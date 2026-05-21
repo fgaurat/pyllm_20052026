@@ -1,0 +1,152 @@
+<svg viewBox="0 0 800 272" xmlns="http://www.w3.org/2000/svg" width="800" height="272" font-family="-apple-system,BlinkMacSystemFont,sans-serif">
+
+  <rect width="800" height="272" rx="8" fill="#FAFAFA" stroke="#E5E7EB"/>
+  <text x="400" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#374151">Un vecteur peut représenter un document ou un mot — selon le contexte</text>
+
+  <!-- ============================================================ -->
+  <!-- GAUCHE : TF-IDF / LSA — vecteur = document                  -->
+  <!-- ============================================================ -->
+
+  <rect x="10" y="24" width="378" height="200" rx="6" fill="white" stroke="#BFDBFE" stroke-width="1.5"/>
+  <text x="199" y="38" text-anchor="middle" font-size="10" font-weight="bold" fill="#1E40AF">TF-IDF / LSA — lignes = documents</text>
+
+  <!-- Header -->
+  <rect x="18" y="44" width="62" height="26" fill="#F3F4F6" stroke="#E5E7EB"/>
+  <rect x="80" y="44" width="72" height="26" fill="#F3F4F6" stroke="#E5E7EB"/>
+  <text x="116" y="60" text-anchor="middle" font-size="9" font-weight="bold" fill="#374151">sinistre</text>
+  <rect x="152" y="44" width="72" height="26" fill="#F3F4F6" stroke="#E5E7EB"/>
+  <text x="188" y="60" text-anchor="middle" font-size="9" font-weight="bold" fill="#374151">chat</text>
+  <rect x="224" y="44" width="72" height="26" fill="#F3F4F6" stroke="#E5E7EB"/>
+  <text x="260" y="60" text-anchor="middle" font-size="9" font-weight="bold" fill="#374151">provision</text>
+  <rect x="296" y="44" width="62" height="26" fill="#F3F4F6" stroke="#E5E7EB"/>
+  <text x="327" y="60" text-anchor="middle" font-size="9" font-weight="bold" fill="#374151">IBNR</text>
+  <rect x="358" y="44" width="24" height="26" fill="#F3F4F6" stroke="#E5E7EB"/>
+  <text x="370" y="60" text-anchor="middle" font-size="10" fill="#9CA3AF">··</text>
+
+  <!-- Row 0: Doc 1 — surligné amber = UN VECTEUR -->
+  <rect x="18" y="70" width="62" height="34" fill="#FEF3C7" stroke="#FDE68A"/>
+  <text x="49" y="91" text-anchor="middle" font-size="9" font-weight="bold" fill="#92400E">Doc 1</text>
+  <rect x="80" y="70" width="72" height="34" fill="#FEF3C7" stroke="#FDE68A"/>
+  <text x="116" y="91" text-anchor="middle" font-size="11" fill="#92400E">0,42</text>
+  <rect x="152" y="70" width="72" height="34" fill="#FEF3C7" stroke="#FDE68A"/>
+  <text x="188" y="91" text-anchor="middle" font-size="11" fill="#92400E">0,87</text>
+  <rect x="224" y="70" width="72" height="34" fill="#FEF3C7" stroke="#FDE68A"/>
+  <text x="260" y="91" text-anchor="middle" font-size="11" fill="#92400E">0,31</text>
+  <rect x="296" y="70" width="62" height="34" fill="#FEF3C7" stroke="#FDE68A"/>
+  <text x="327" y="91" text-anchor="middle" font-size="11" fill="#D1D5DB">0</text>
+  <rect x="358" y="70" width="24" height="34" fill="#FEF3C7" stroke="#FDE68A"/>
+  <text x="370" y="91" text-anchor="middle" font-size="10" fill="#9CA3AF">··</text>
+  <!-- Label vecteur -->
+  <text x="199" y="80" text-anchor="middle" font-size="8" font-weight="bold" fill="#B45309">← un vecteur →</text>
+
+  <!-- Row 1: Doc 2 -->
+  <rect x="18" y="104" width="62" height="34" fill="#F9FAFB" stroke="#E5E7EB"/>
+  <text x="49" y="125" text-anchor="middle" font-size="9" font-weight="bold" fill="#6B7280">Doc 2</text>
+  <rect x="80" y="104" width="72" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="116" y="125" text-anchor="middle" font-size="11" fill="#374151">0,38</text>
+  <rect x="152" y="104" width="72" height="34" fill="#F9FAFB" stroke="#E5E7EB"/>
+  <text x="188" y="125" text-anchor="middle" font-size="11" fill="#D1D5DB">0</text>
+  <rect x="224" y="104" width="72" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="260" y="125" text-anchor="middle" font-size="11" fill="#374151">0,45</text>
+  <rect x="296" y="104" width="62" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="327" y="125" text-anchor="middle" font-size="11" fill="#374151">0,62</text>
+  <rect x="358" y="104" width="24" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="370" y="125" text-anchor="middle" font-size="10" fill="#9CA3AF">··</text>
+
+  <!-- Row 2: Doc 3 -->
+  <rect x="18" y="138" width="62" height="34" fill="#F9FAFB" stroke="#E5E7EB"/>
+  <text x="49" y="159" text-anchor="middle" font-size="9" font-weight="bold" fill="#6B7280">Doc 3</text>
+  <rect x="80" y="138" width="72" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="116" y="159" text-anchor="middle" font-size="11" fill="#374151">0,71</text>
+  <rect x="152" y="138" width="72" height="34" fill="#F9FAFB" stroke="#E5E7EB"/>
+  <text x="188" y="159" text-anchor="middle" font-size="11" fill="#D1D5DB">0</text>
+  <rect x="224" y="138" width="72" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="260" y="159" text-anchor="middle" font-size="11" fill="#374151">0,28</text>
+  <rect x="296" y="138" width="62" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="327" y="159" text-anchor="middle" font-size="11" fill="#374151">0,55</text>
+  <rect x="358" y="138" width="24" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="370" y="159" text-anchor="middle" font-size="10" fill="#9CA3AF">··</text>
+
+  <!-- Légende gauche -->
+  <text x="199" y="190" text-anchor="middle" font-size="9" fill="#6B7280">colonnes = mots (~80 000 dimensions)</text>
+  <rect x="60" y="198" width="278" height="18" rx="4" fill="#FEF3C7" stroke="#FDE68A"/>
+  <text x="199" y="210" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400E">→ un vecteur = un document</text>
+  <text x="199" y="222" text-anchor="middle" font-size="8" fill="#9CA3AF">valeurs toujours ≥ 0 (scores TF-IDF)</text>
+
+  <!-- ============================================================ -->
+  <!-- DROITE : Embeddings Bengio — vecteur = mot                   -->
+  <!-- ============================================================ -->
+
+  <rect x="412" y="24" width="378" height="200" rx="6" fill="white" stroke="#BBF7D0" stroke-width="1.5"/>
+  <text x="601" y="38" text-anchor="middle" font-size="10" font-weight="bold" fill="#065F46">Embeddings (Bengio) — lignes = mots</text>
+
+  <!-- Header -->
+  <rect x="420" y="44" width="72" height="26" fill="#F3F4F6" stroke="#E5E7EB"/>
+  <rect x="492" y="44" width="68" height="26" fill="#F3F4F6" stroke="#E5E7EB"/>
+  <text x="526" y="60" text-anchor="middle" font-size="9" font-weight="bold" fill="#374151">dim 1</text>
+  <rect x="560" y="44" width="68" height="26" fill="#F3F4F6" stroke="#E5E7EB"/>
+  <text x="594" y="60" text-anchor="middle" font-size="9" font-weight="bold" fill="#374151">dim 2</text>
+  <rect x="628" y="44" width="68" height="26" fill="#F3F4F6" stroke="#E5E7EB"/>
+  <text x="662" y="60" text-anchor="middle" font-size="9" font-weight="bold" fill="#374151">dim 3</text>
+  <rect x="696" y="44" width="68" height="26" fill="#F3F4F6" stroke="#E5E7EB"/>
+  <text x="730" y="60" text-anchor="middle" font-size="9" font-weight="bold" fill="#374151">dim 4</text>
+  <rect x="764" y="44" width="20" height="26" fill="#F3F4F6" stroke="#E5E7EB"/>
+  <text x="774" y="60" text-anchor="middle" font-size="10" fill="#9CA3AF">·</text>
+
+  <!-- Row 0: chat — surligné = UN VECTEUR -->
+  <rect x="420" y="70" width="72" height="34" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1.5"/>
+  <text x="456" y="91" text-anchor="middle" font-size="9" font-weight="bold" fill="#065F46">chat</text>
+  <rect x="492" y="70" width="68" height="34" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1.5"/>
+  <text x="526" y="91" text-anchor="middle" font-size="11" fill="#065F46">0,23</text>
+  <rect x="560" y="70" width="68" height="34" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1.5"/>
+  <text x="594" y="91" text-anchor="middle" font-size="11" fill="#DC2626">−0,71</text>
+  <rect x="628" y="70" width="68" height="34" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1.5"/>
+  <text x="662" y="91" text-anchor="middle" font-size="11" fill="#065F46">0,45</text>
+  <rect x="696" y="70" width="68" height="34" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1.5"/>
+  <text x="730" y="91" text-anchor="middle" font-size="11" fill="#065F46">0,12</text>
+  <rect x="764" y="70" width="20" height="34" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1.5"/>
+  <text x="774" y="91" text-anchor="middle" font-size="10" fill="#9CA3AF">·</text>
+  <text x="630" y="80" text-anchor="middle" font-size="8" font-weight="bold" fill="#065F46">← un vecteur →</text>
+
+  <!-- Row 1: chien (proche de chat) -->
+  <rect x="420" y="104" width="72" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="456" y="125" text-anchor="middle" font-size="9" font-weight="bold" fill="#374151">chien</text>
+  <rect x="492" y="104" width="68" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="526" y="125" text-anchor="middle" font-size="11" fill="#374151">0,21</text>
+  <rect x="560" y="104" width="68" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="594" y="125" text-anchor="middle" font-size="11" fill="#DC2626">−0,68</text>
+  <rect x="628" y="104" width="68" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="662" y="125" text-anchor="middle" font-size="11" fill="#374151">0,43</text>
+  <rect x="696" y="104" width="68" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="730" y="125" text-anchor="middle" font-size="11" fill="#374151">0,09</text>
+  <rect x="764" y="104" width="20" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="774" y="125" text-anchor="middle" font-size="10" fill="#9CA3AF">·</text>
+  <!-- Accolade "proches" -->
+  <text x="792" y="98" font-size="9" fill="#059669">}</text>
+  <text x="796" y="105" font-size="7" fill="#059669">proches</text>
+
+  <!-- Row 2: provision -->
+  <rect x="420" y="138" width="72" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="456" y="159" text-anchor="middle" font-size="9" font-weight="bold" fill="#374151">provision</text>
+  <rect x="492" y="138" width="68" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="526" y="159" text-anchor="middle" font-size="11" fill="#DC2626">−0,34</text>
+  <rect x="560" y="138" width="68" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="594" y="159" text-anchor="middle" font-size="11" fill="#374151">0,12</text>
+  <rect x="628" y="138" width="68" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="662" y="159" text-anchor="middle" font-size="11" fill="#DC2626">−0,56</text>
+  <rect x="696" y="138" width="68" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="730" y="159" text-anchor="middle" font-size="11" fill="#374151">0,78</text>
+  <rect x="764" y="138" width="20" height="34" fill="white" stroke="#E5E7EB"/>
+  <text x="774" y="159" text-anchor="middle" font-size="10" fill="#9CA3AF">·</text>
+
+  <!-- Légende droite -->
+  <text x="601" y="190" text-anchor="middle" font-size="9" fill="#6B7280">colonnes = dimensions latentes (~50–200)</text>
+  <rect x="462" y="198" width="278" height="18" rx="4" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="601" y="210" text-anchor="middle" font-size="10" font-weight="bold" fill="#065F46">→ un vecteur = un mot</text>
+  <text x="601" y="222" text-anchor="middle" font-size="8" fill="#DC2626">valeurs pouvant être négatives</text>
+
+  <!-- Séparateur central -->
+  <line x1="396" y1="30" x2="396" y2="230" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="404" y="132" font-size="9" fill="#9CA3AF" transform="rotate(-90 404 132)">même outil, objets différents</text>
+
+</svg>

@@ -1,0 +1,74 @@
+<svg viewBox="0 0 560 200" xmlns="http://www.w3.org/2000/svg" width="560" height="200" font-family="-apple-system,BlinkMacSystemFont,sans-serif">
+  <defs>
+    <marker id="bowarr" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto">
+      <polygon points="0 0,7 2.5,0 5" fill="#6B7280"/>
+    </marker>
+  </defs>
+  <rect width="560" height="200" rx="8" fill="#FAFAFA" stroke="#E5E7EB"/>
+  <text x="280" y="17" text-anchor="middle" font-size="12" font-weight="bold" fill="#374151">Bag of Words — du texte au vecteur de fréquences (1954–1975)</text>
+
+  <!-- LEFT: Text source -->
+  <rect x="10" y="28" width="148" height="82" rx="6" fill="white" stroke="#BFDBFE" stroke-width="1.5"/>
+  <text x="84" y="44" text-anchor="middle" font-size="10" font-weight="bold" fill="#1E40AF">Texte source</text>
+  <text x="84" y="60" text-anchor="middle" font-size="9.5" fill="#374151">« La provision IBNR</text>
+  <text x="84" y="74" text-anchor="middle" font-size="9.5" fill="#374151">est une provision</text>
+  <text x="84" y="88" text-anchor="middle" font-size="9.5" fill="#374151">pour sinistres tardifs »</text>
+
+  <!-- Arrow left→middle -->
+  <line x1="158" y1="69" x2="175" y2="69" stroke="#6B7280" stroke-width="1.5" marker-end="url(#bowarr)"/>
+  <text x="166" y="62" text-anchor="middle" font-size="8" fill="#6B7280">comptage</text>
+
+  <!-- MIDDLE: Vocabulary tokens -->
+  <rect x="178" y="28" width="155" height="110" rx="6" fill="white" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="255" y="44" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Vocabulaire (ordre ignoré)</text>
+
+  <rect x="186" y="52" width="64" height="18" rx="3" fill="#DBEAFE" stroke="#93C5FD"/>
+  <text x="218" y="65" text-anchor="middle" font-size="9" fill="#1E40AF">provision</text>
+  <rect x="256" y="52" width="68" height="18" rx="3" fill="#DBEAFE" stroke="#93C5FD"/>
+  <text x="290" y="65" text-anchor="middle" font-size="9" fill="#1E40AF">IBNR</text>
+
+  <rect x="186" y="75" width="64" height="18" rx="3" fill="#F3F4F6" stroke="#D1D5DB"/>
+  <text x="218" y="88" text-anchor="middle" font-size="9" fill="#374151">sinistre</text>
+  <rect x="256" y="75" width="68" height="18" rx="3" fill="#F3F4F6" stroke="#D1D5DB"/>
+  <text x="290" y="88" text-anchor="middle" font-size="9" fill="#374151">tardif</text>
+
+  <rect x="186" y="98" width="64" height="18" rx="3" fill="#F3F4F6" stroke="#D1D5DB"/>
+  <text x="218" y="111" text-anchor="middle" font-size="9" fill="#374151">pour</text>
+  <rect x="256" y="98" width="68" height="18" rx="3" fill="#F9FAFB" stroke="#E5E7EB"/>
+  <text x="290" y="111" text-anchor="middle" font-size="9" fill="#9CA3AF">est / la</text>
+
+  <text x="255" y="130" text-anchor="middle" font-size="8.5" fill="#9CA3AF">… 79 994 autres termes …</text>
+
+  <!-- Arrow middle→right -->
+  <line x1="335" y1="83" x2="353" y2="83" stroke="#6B7280" stroke-width="1.5" marker-end="url(#bowarr)"/>
+  <text x="344" y="76" text-anchor="middle" font-size="8" fill="#6B7280">TF-IDF</text>
+
+  <!-- RIGHT: Sparse vector -->
+  <rect x="355" y="28" width="195" height="143" rx="6" fill="white" stroke="#BBF7D0" stroke-width="1.5"/>
+  <text x="452" y="44" text-anchor="middle" font-size="10" font-weight="bold" fill="#065F46">Vecteur creux (|V| ≈ 80 000)</text>
+
+  <text x="368" y="63" font-size="9" fill="#374151">provision :</text>
+  <rect x="432" y="53" width="30" height="14" rx="2" fill="#10B981"/>
+  <text x="447" y="64" text-anchor="middle" font-size="9" fill="white" font-weight="bold">2</text>
+  <text x="466" y="64" font-size="8.5" fill="#6B7280">(apparaît 2×)</text>
+
+  <text x="368" y="83" font-size="9" fill="#374151">IBNR :</text>
+  <rect x="432" y="73" width="20" height="14" rx="2" fill="#34D399"/>
+  <text x="442" y="84" text-anchor="middle" font-size="9" fill="white" font-weight="bold">1</text>
+
+  <text x="368" y="103" font-size="9" fill="#374151">sinistre :</text>
+  <rect x="432" y="93" width="20" height="14" rx="2" fill="#6EE7B7"/>
+  <text x="442" y="104" text-anchor="middle" font-size="9" fill="#065F46" font-weight="bold">1</text>
+
+  <text x="368" y="123" font-size="9" fill="#374151">tardif :</text>
+  <rect x="432" y="113" width="20" height="14" rx="2" fill="#A7F3D0"/>
+  <text x="442" y="124" text-anchor="middle" font-size="9" fill="#065F46" font-weight="bold">1</text>
+
+  <text x="368" y="143" font-size="9" fill="#9CA3AF">automobile : 0</text>
+  <text x="368" y="157" font-size="8.5" fill="#9CA3AF">météo : 0 ,  … 79 994 zéros</text>
+
+  <!-- Bottom note -->
+  <rect x="10" y="155" width="540" height="36" rx="5" fill="#FEF9C3" stroke="#FDE68A"/>
+  <text x="280" y="168" text-anchor="middle" font-size="10" fill="#92400E" font-weight="bold">Limite structurelle du BoW / TF-IDF :</text>
+  <text x="280" y="183" text-anchor="middle" font-size="9.5" fill="#374151">« voiture » et « automobile » → orthogonaux pour le modèle, comme « aléatoire »</text>
+</svg>

@@ -1,0 +1,48 @@
+<svg viewBox="0 0 600 152" xmlns="http://www.w3.org/2000/svg" width="600" height="152" font-family="-apple-system,BlinkMacSystemFont,sans-serif">
+  <defs>
+    <marker id="s4a" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#6B7280"/></marker>
+  </defs>
+  <rect width="600" height="152" rx="8" fill="#FAFAFA" stroke="#E5E7EB"/>
+  <text x="300" y="17" text-anchor="middle" font-size="12" font-weight="bold" fill="#374151">Pipeline RAG — recombinaison de 60 ans de NLP</text>
+  <!-- Box 1: Question -->
+  <rect x="12" y="30" width="72" height="52" rx="5" fill="white" stroke="#9CA3AF" stroke-width="1.5"/>
+  <text x="48" y="51" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#374151">Question</text>
+  <text x="48" y="67" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#9CA3AF">utilisateur</text>
+  <!-- Arrow 1→2 -->
+  <line x1="84" y1="56" x2="100" y2="56" stroke="#6B7280" stroke-width="1.5" marker-end="url(#s4a)"/>
+  <!-- Box 2: Encoder BERT -->
+  <rect x="102" y="30" width="95" height="52" rx="5" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="149" y="48" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#1E40AF">Encoder</text>
+  <text x="149" y="62" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#3B82F6">BERT-like</text>
+  <text x="149" y="75" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#93C5FD">héritage 2018</text>
+  <!-- Arrow 2→3 -->
+  <line x1="197" y1="56" x2="213" y2="56" stroke="#6B7280" stroke-width="1.5" marker-end="url(#s4a)"/>
+  <!-- Box 3: Recherche -->
+  <rect x="215" y="30" width="105" height="52" rx="5" fill="#F0FDF4" stroke="#059669" stroke-width="1.5"/>
+  <text x="267" y="48" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#065F46">Recherche</text>
+  <text x="267" y="62" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#059669">cosinus + BM25</text>
+  <text x="267" y="75" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#86EFAC">héritage 1965</text>
+  <!-- Arrow 3→4 -->
+  <line x1="320" y1="56" x2="336" y2="56" stroke="#6B7280" stroke-width="1.5" marker-end="url(#s4a)"/>
+  <!-- Box 4: Top-k chunks -->
+  <rect x="338" y="30" width="90" height="52" rx="5" fill="#F0FDF4" stroke="#059669" stroke-width="1.5"/>
+  <text x="383" y="51" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#065F46">Top-k chunks</text>
+  <text x="383" y="67" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#059669">passages contexte</text>
+  <!-- Arrow 4→5 -->
+  <line x1="428" y1="56" x2="444" y2="56" stroke="#6B7280" stroke-width="1.5" marker-end="url(#s4a)"/>
+  <!-- Box 5: LLM GPT -->
+  <rect x="446" y="30" width="90" height="52" rx="5" fill="#FFF7ED" stroke="#D97706" stroke-width="1.5"/>
+  <text x="491" y="48" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#92400E">LLM</text>
+  <text x="491" y="62" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#D97706">GPT-like</text>
+  <text x="491" y="75" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#FCD34D">héritage 2018</text>
+  <!-- Arrow 5→6 -->
+  <line x1="536" y1="56" x2="550" y2="56" stroke="#6B7280" stroke-width="1.5" marker-end="url(#s4a)"/>
+  <!-- Box 6: Réponse -->
+  <rect x="552" y="30" width="40" height="52" rx="5" fill="white" stroke="#9CA3AF" stroke-width="1.5"/>
+  <text x="572" y="51" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="bold" fill="#374151">Réponse</text>
+  <text x="572" y="67" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#9CA3AF">+ sources</text>
+  <!-- Legend row -->
+  <rect x="12" y="94" width="576" height="48" rx="5" fill="white" stroke="#E5E7EB"/>
+  <text x="300" y="110" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#374151">1954 : Harris · 1965 : Salton (cosinus + TF-IDF) · 2013 : Word2Vec (embeddings denses)</text>
+  <text x="300" y="130" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#374151">2017 : Transformer · 2018 : BERT + GPT · 2020 : RAG (Lewis, Meta AI)</text>
+</svg>

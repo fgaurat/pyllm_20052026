@@ -1,0 +1,106 @@
+<svg viewBox="0 0 640 295" xmlns="http://www.w3.org/2000/svg" width="640" height="295" font-family="-apple-system,BlinkMacSystemFont,sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#6B7280"/></marker>
+  </defs>
+  <rect width="640" height="295" rx="8" fill="#FAFAFA" stroke="#E5E7EB"/>
+  <text x="320" y="17" text-anchor="middle" font-size="12" font-weight="bold" fill="#374151">Du vecteur creux (TF-IDF) au vecteur dense (LSA)</text>
+
+  <!-- ===== LEFT PANEL: TF-IDF ===== -->
+  <rect x="10" y="24" width="272" height="174" rx="6" fill="white" stroke="#BFDBFE" stroke-width="1.5"/>
+  <text x="146" y="40" text-anchor="middle" font-size="11" font-weight="bold" fill="#1E40AF">TF-IDF — vecteur creux</text>
+  <text x="146" y="53" text-anchor="middle" font-size="9" fill="#6B7280">~80 000 dimensions · 4 valeurs non-nulles</text>
+
+  <!-- Baseline -->
+  <line x1="28" y1="150" x2="272" y2="150" stroke="#D1D5DB" stroke-width="1"/>
+
+  <!-- Near-zero bars (height=2) at x = 33 + i*11, i≠3,8,13,17 -->
+  <rect x="33" y="148" width="8" height="2" fill="#E5E7EB"/>
+  <rect x="44" y="148" width="8" height="2" fill="#E5E7EB"/>
+  <rect x="55" y="148" width="8" height="2" fill="#E5E7EB"/>
+  <rect x="77" y="148" width="8" height="2" fill="#E5E7EB"/>
+  <rect x="88" y="148" width="8" height="2" fill="#E5E7EB"/>
+  <rect x="99" y="148" width="8" height="2" fill="#E5E7EB"/>
+  <rect x="110" y="148" width="8" height="2" fill="#E5E7EB"/>
+  <rect x="132" y="148" width="8" height="2" fill="#E5E7EB"/>
+  <rect x="143" y="148" width="8" height="2" fill="#E5E7EB"/>
+  <rect x="154" y="148" width="8" height="2" fill="#E5E7EB"/>
+  <rect x="165" y="148" width="8" height="2" fill="#E5E7EB"/>
+  <rect x="187" y="148" width="8" height="2" fill="#E5E7EB"/>
+  <rect x="198" y="148" width="8" height="2" fill="#E5E7EB"/>
+  <rect x="209" y="148" width="8" height="2" fill="#E5E7EB"/>
+  <rect x="231" y="148" width="8" height="2" fill="#E5E7EB"/>
+  <rect x="242" y="148" width="8" height="2" fill="#E5E7EB"/>
+
+  <!-- Non-zero bars -->
+  <!-- i=3: sinistre, height=52 -->
+  <rect x="66" y="98" width="8" height="52" rx="1" fill="#60A5FA"/>
+  <text x="70" y="93" text-anchor="middle" font-size="8" fill="#2563EB">0.42</text>
+  <text x="70" y="163" text-anchor="middle" font-size="8" fill="#1E40AF">sinistre</text>
+  <!-- i=8: provision, height=38 -->
+  <rect x="121" y="112" width="8" height="38" rx="1" fill="#93C5FD"/>
+  <text x="125" y="107" text-anchor="middle" font-size="8" fill="#2563EB">0.31</text>
+  <text x="125" y="163" text-anchor="middle" font-size="8" fill="#1E40AF">provision</text>
+  <!-- i=13: affaissement, height=22 -->
+  <rect x="176" y="128" width="8" height="22" rx="1" fill="#BFDBFE"/>
+  <text x="180" y="123" text-anchor="middle" font-size="8" fill="#2563EB">0.18</text>
+  <text x="180" y="163" text-anchor="middle" font-size="8" fill="#1E40AF">affaiss.</text>
+  <!-- i=17: IBNR, height=65 -->
+  <rect x="220" y="85" width="8" height="65" rx="1" fill="#2563EB"/>
+  <text x="224" y="80" text-anchor="middle" font-size="8" fill="#2563EB">0.87</text>
+  <text x="224" y="163" text-anchor="middle" font-size="8" fill="#1E40AF">IBNR</text>
+
+  <!-- "···" hint at right -->
+  <text x="255" y="151" font-size="10" fill="#9CA3AF">···</text>
+
+  <!-- Legend note -->
+  <text x="146" y="185" text-anchor="middle" font-size="8" fill="#9CA3AF">les ~79 996 autres dimensions valent 0</text>
+
+  <!-- ===== MIDDLE ARROW ===== -->
+  <line x1="292" y1="111" x2="346" y2="111" stroke="#6B7280" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="319" y="105" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">SVD</text>
+  <text x="319" y="123" text-anchor="middle" font-size="9" fill="#6B7280">réduction</text>
+
+  <!-- ===== RIGHT PANEL: LSA ===== -->
+  <rect x="358" y="24" width="272" height="174" rx="6" fill="white" stroke="#BBF7D0" stroke-width="1.5"/>
+  <text x="494" y="40" text-anchor="middle" font-size="11" font-weight="bold" fill="#065F46">LSA — vecteur dense</text>
+  <text x="494" y="53" text-anchor="middle" font-size="9" fill="#6B7280">~300 dimensions · toutes non-nulles</text>
+
+  <!-- Baseline -->
+  <line x1="368" y1="150" x2="620" y2="150" stroke="#D1D5DB" stroke-width="1"/>
+
+  <!-- 7 bars: width=30, gap=5 → 35 per bar, starting at x=373 -->
+  <!-- Bar i at x = 373 + i*35 -->
+  <!-- i=0: réserves h=62 --> <rect x="373" y="88" width="30" height="62" rx="2" fill="#059669"/>
+  <!-- i=1: sinistres h=45 --> <rect x="408" y="105" width="30" height="45" rx="2" fill="#10B981"/>
+  <!-- i=2: provisions h=70 --> <rect x="443" y="80" width="30" height="70" rx="2" fill="#047857"/>
+  <!-- i=3: risque h=35    --> <rect x="478" y="115" width="30" height="35" rx="2" fill="#34D399"/>
+  <!-- i=4: gestion h=25   --> <rect x="513" y="125" width="30" height="25" rx="2" fill="#6EE7B7"/>
+  <!-- i=5: temps h=16     --> <rect x="548" y="134" width="30" height="16" rx="2" fill="#A7F3D0"/>
+  <!-- i=6: région h=10    --> <rect x="583" y="140" width="30" height="10" rx="2" fill="#D1FAE5" stroke="#A7F3D0"/>
+
+  <!-- Labels below bars -->
+  <text x="388" y="163" text-anchor="middle" font-size="8" fill="#065F46">réserves</text>
+  <text x="423" y="163" text-anchor="middle" font-size="8" fill="#065F46">sinistres</text>
+  <text x="458" y="163" text-anchor="middle" font-size="8" fill="#065F46">provisions</text>
+  <text x="493" y="163" text-anchor="middle" font-size="8" fill="#065F46">risque</text>
+  <text x="528" y="163" text-anchor="middle" font-size="8" fill="#065F46">gestion</text>
+  <text x="563" y="163" text-anchor="middle" font-size="8" fill="#065F46">temps</text>
+  <text x="598" y="163" text-anchor="middle" font-size="8" fill="#065F46">région</text>
+
+  <!-- Legend note -->
+  <text x="494" y="185" text-anchor="middle" font-size="8" fill="#9CA3AF">noms illustratifs — dimensions LSA non interprétables</text>
+
+  <!-- ===== BOTTOM COMPARISON ===== -->
+  <rect x="10" y="206" width="620" height="78" rx="6" fill="white" stroke="#E5E7EB"/>
+  <text x="320" y="220" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Similarité entre « IBNR » et « provisions non liquidées »</text>
+
+  <rect x="18" y="227" width="294" height="48" rx="4" fill="#FEF2F2" stroke="#FECACA"/>
+  <text x="165" y="243" text-anchor="middle" font-size="10" font-weight="bold" fill="#991B1B">TF-IDF  →  cos = 0,00</text>
+  <text x="165" y="256" text-anchor="middle" font-size="9" fill="#374151">aucun mot en commun → vecteurs orthogonaux</text>
+  <text x="165" y="268" text-anchor="middle" font-size="9" fill="#9CA3AF">« IBNR » et « provisions » = mots différents</text>
+
+  <rect x="328" y="227" width="294" height="48" rx="4" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="475" y="243" text-anchor="middle" font-size="10" font-weight="bold" fill="#065F46">LSA  →  cos ≈ 0,83</text>
+  <text x="475" y="256" text-anchor="middle" font-size="9" fill="#374151">concepts latents partagés → voisins dans l'espace</text>
+  <text x="475" y="268" text-anchor="middle" font-size="9" fill="#9CA3AF">même région sémantique détectée</text>
+</svg>

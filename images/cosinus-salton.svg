@@ -1,0 +1,74 @@
+<svg viewBox="0 0 620 280" xmlns="http://www.w3.org/2000/svg" width="620" height="280" font-family="-apple-system,BlinkMacSystemFont,sans-serif">
+  <defs>
+    <marker id="cs_ax" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#9CA3AF"/></marker>
+    <marker id="cs_b"  markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#2563EB"/></marker>
+    <marker id="cs_g"  markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#059669"/></marker>
+    <marker id="cs_r"  markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#DC2626"/></marker>
+  </defs>
+  <rect width="620" height="280" rx="8" fill="#FAFAFA" stroke="#E5E7EB"/>
+  <text x="310" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#374151">Similarité cosinus — espace vectoriel de Salton (1965)</text>
+
+  <!-- Axes  (origine : 90, 225) -->
+  <line x1="90" y1="225" x2="500" y2="225" stroke="#9CA3AF" stroke-width="1.5" marker-end="url(#cs_ax)"/>
+  <line x1="90" y1="225" x2="90"  y2="32"  stroke="#9CA3AF" stroke-width="1.5" marker-end="url(#cs_ax)"/>
+  <text x="503" y="229" font-size="9" fill="#9CA3AF" dominant-baseline="middle">TF-IDF « sinistre »</text>
+  <text x="93"  y="30"  font-size="9" fill="#9CA3AF">TF-IDF « provision »</text>
+  <circle cx="90" cy="225" r="2.5" fill="#9CA3AF"/>
+
+  <!--
+    Vecteurs (origine 90, 225) :
+      q  (requête PSAP) : 42°, L=215  → (90+159.7, 225-143.8) = (250, 81)
+      d₁ (doc IBNR)    : 70°, L=160  → (90+54.7,  225-150.4) = (145, 75)
+      d₂ (doc météo)   :  8°, L=260  → (90+257.5, 225-36.2)  = (348, 189)
+    α = angle(d₁, q) = 28°  →  cos(α) ≈ 0,94
+    θ = angle(q,  d₂) = 34°  →  cos(θ) ≈ 0,12  (valeur illustrative)
+  -->
+
+  <!-- Lignes de projection d₁ (145, 75) -->
+  <line x1="145" y1="75"  x2="145" y2="225" stroke="#2563EB" stroke-width="0.8" stroke-dasharray="5,3" opacity="0.55"/>
+  <line x1="90"  y1="75"  x2="145" y2="75"  stroke="#2563EB" stroke-width="0.8" stroke-dasharray="5,3" opacity="0.55"/>
+
+  <!-- Lignes de projection d₂ (348, 189) -->
+  <line x1="348" y1="189" x2="348" y2="225" stroke="#DC2626" stroke-width="0.8" stroke-dasharray="5,3" opacity="0.55"/>
+  <line x1="90"  y1="189" x2="348" y2="189" stroke="#DC2626" stroke-width="0.8" stroke-dasharray="5,3" opacity="0.55"/>
+
+  <!-- Vecteur q (requête PSAP) — vert, 42°, endpoint (250, 81) -->
+  <line x1="90" y1="225" x2="250" y2="81" stroke="#059669" stroke-width="2.5" marker-end="url(#cs_g)"/>
+  <text x="255" y="79" font-size="14" fill="#059669" font-weight="bold">q</text>
+  <text x="255" y="93" font-size="9"  fill="#059669">(requête PSAP)</text>
+
+  <!-- Vecteur d₁ (doc IBNR) — bleu, 70°, endpoint (145, 75) -->
+  <line x1="90" y1="225" x2="145" y2="75" stroke="#2563EB" stroke-width="2.5" marker-end="url(#cs_b)"/>
+  <text x="150" y="73" font-size="14" fill="#2563EB" font-weight="bold">d₁</text>
+  <text x="150" y="87" font-size="9"  fill="#2563EB">doc IBNR</text>
+
+  <!-- Vecteur d₂ (doc météo) — rouge pointillé, 8°, endpoint (348, 189) -->
+  <line x1="90" y1="225" x2="348" y2="189" stroke="#DC2626" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#cs_r)"/>
+  <text x="353" y="187" font-size="14" fill="#DC2626" font-weight="bold">d₂</text>
+  <text x="353" y="200" font-size="9"  fill="#DC2626">doc météo</text>
+
+  <!--
+    Arc α entre q(42°) et d₁(70°), rayon 55 :
+      Départ sur q  r=55 : (90+55·cos42°, 225-55·sin42°) = (131, 188)
+      Arrivée sur d₁ r=55 : (90+55·cos70°, 225-55·sin70°) = (109, 173)
+      42°→70° sens trigono = sweep=1 en SVG (y↓)
+  -->
+  <path d="M 131 188 A 55 55 0 0 0 109 173" stroke="#374151" stroke-width="1.8" fill="none"/>
+  <text x="116" y="168" font-size="13" fill="#374151" font-weight="bold">α</text>
+
+  <!--
+    Arc θ entre d₂(8°) et q(42°), rayon 82 :
+      Départ sur d₂ r=82 : (90+82·cos8°, 225-82·sin8°) = (171, 214)
+      Arrivée sur q  r=82 : (90+82·cos42°, 225-82·sin42°) = (151, 170)
+      8°→42° sens trigono = sweep=1 en SVG (y↓)
+  -->
+  <path d="M 171 214 A 82 82 0 0 0 151 170" stroke="#DC2626" stroke-width="1.5" fill="none" stroke-dasharray="4,2"/>
+  <text x="177" y="183" font-size="13" fill="#DC2626" font-weight="bold">θ</text>
+
+  <!-- Légende sur deux lignes -->
+  <rect x="90" y="234" width="520" height="38" rx="5" fill="white" stroke="#E5E7EB"/>
+  <rect x="100" y="240" width="10" height="10" rx="2" fill="#2563EB"/>
+  <text x="115" y="249" font-size="10.5" fill="#374151">cos(α) ≈ 0,94  →  IBNR proche de la requête (petit angle α)</text>
+  <rect x="100" y="254" width="10" height="10" rx="2" fill="#DC2626"/>
+  <text x="115" y="263" font-size="10.5" fill="#374151">cos(θ) ≈ 0,12  →  météo non pertinent (grand angle θ)</text>
+</svg>
