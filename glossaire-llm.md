@@ -419,6 +419,9 @@ Point d'entrée unique qui gère l'authentification, le rate limiting et le rout
 **Inference server**
 Serveur spécialisé pour servir des LLMs en production : Ollama (usage local), vLLM (haute performance), TGI (HuggingFace), llama.cpp (CPU/GPU mixte).
 
+**MCP (Model Context Protocol) / Serveur MCP**
+Protocole ouvert introduit par Anthropic (2024) qui standardise la façon dont les applications LLM se connectent à des sources de données et des outils externes. Un *serveur MCP* expose des ressources (fichiers, bases de données, API) et des outils (fonctions exécutables) qu'un client LLM (Claude Desktop, IDE, agent…) peut découvrir et appeler de façon uniforme. Évite de réimplémenter une intégration ad hoc pour chaque couple (modèle, outil) — l'équivalent de USB pour le branchement d'outils aux LLMs.
+
 **On-premise**
 Déploiement sur l'infrastructure propre de l'organisation, sans dépendance cloud. Répond aux contraintes de confidentialité des données (RGPD, données sensibles).
 
