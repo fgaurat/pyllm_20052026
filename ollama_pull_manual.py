@@ -153,6 +153,7 @@ def download_blob(namespace: str, model: str, digest: str, dest_blobs: Path) -> 
         print(f"  ⚠ {filename[:19]}… présent mais SHA incorrect, retéléchargement")
 
     url = f"https://{REGISTRY}/v2/{namespace}/{model}/blobs/{digest}"
+    print(f"  → {url}")
     tmp = target.with_suffix(".part")
     h = hashlib.sha256()
     downloaded = 0
