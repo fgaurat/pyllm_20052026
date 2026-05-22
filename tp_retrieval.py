@@ -45,8 +45,8 @@ def retriever(collection,requete: str, k: int = TOP_K) -> list[dict]:
 
 
 def main():
-    # requete = "Comment soigner une fougère dont les frondes brunissent ?"
-    requete = "Comment peigner un poney ?"
+    requete = "Comment soigner une fougère dont les frondes brunissent ?"
+    # requete = "Comment peigner un poney ?"
     client     = chromadb.PersistentClient(path=str(DB_DIR))
     collection = client.get_or_create_collection(
         "corpus_rag", metadata={"hnsw:space": "cosine"}
